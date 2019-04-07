@@ -1,5 +1,18 @@
 {
-  "miceWeb": {
+  "google": {
+    "alertCommand": "echo 'ALERT'",
+    "delayBetweenCheckSeconds": 5,
+    "axiosConfig": {
+      "method": "GET",  
+      "url": "https://www.google.com/",
+      "timeout": 5000
+    },
+    "expectedResponse": {
+      "status": 200,
+      "statusText": "OK"
+    }
+  },
+  "web": {
     "alertCommand": "parole /home/wj42/.binScripts/nodeHelpersRunner/alert.mp3",
     "delayBetweenCheckSeconds": 45,
     "axiosConfig": {
@@ -13,7 +26,7 @@
       "data": "{{FULL_RESPONSE}}"
     }
   },
-  "miceApi": {
+  "api": {
     "alertCommand": "parole /home/wj42/.binScripts/nodeHelpersRunner/alert.mp3",
     "delayBetweenCheckSeconds": 45,
     "axiosConfig": {
