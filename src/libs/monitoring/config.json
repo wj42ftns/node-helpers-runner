@@ -1,0 +1,13 @@
+{
+  "test": {
+    "delayBetweenCheckSeconds": 9,
+    "ssh": "root@127.0.0.1",
+    "sshReconnectTime": "30m",
+    "alert": {
+      "command": "parole /home/wj42/.binScripts/nodeHelpersRunner/alert.mp3",
+      "CPU": 40,
+      "MEM": 75,
+      "time": "3m"
+    }    
+  }
+}

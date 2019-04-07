@@ -1,0 +1,44 @@
+{
+  "miceWeb": {
+    "alertCommand": "parole /home/wj42/.binScripts/nodeHelpersRunner/alert.mp3",
+    "delayBetweenCheckSeconds": 45,
+    "axiosConfig": {
+      "method": "GET",  
+      "url": "https://url...",
+      "timeout": 15000
+    },
+    "expectedResponse": {
+      "status": 200,
+      "statusText": "OK",
+      "data": "{{FULL_RESPONSE}}"
+    }
+  },
+  "miceApi": {
+    "alertCommand": "parole /home/wj42/.binScripts/nodeHelpersRunner/alert.mp3",
+    "delayBetweenCheckSeconds": 45,
+    "axiosConfig": {
+      "method": "GET",
+      "url": "https://api...",
+      "timeout": 15000,
+      "headers": {
+        "X-Access-Token": "8eN45g5urZf8S5U1DGrXe92KCqQ5x6oAdfaLz6D636hILIAhofbIAjRX3QF7tBTF",
+        "Accept": "application/json",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": 0,
+        "Content-Type": "application/json"
+      }
+    },
+    "expectedResponse": {
+      "status": 200,
+      "statusText": "OK",
+      "data.0.username": "username",
+      "data.0.userRoles": [
+        {
+          "title": "title",
+          "id": "id"
+        }
+      ]
+    }
+  }
+}

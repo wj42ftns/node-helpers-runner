@@ -1,0 +1,56 @@
+{
+  "name": "node-helpers-runner",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": {
+    "name": "Dmitriy Salnikov",
+    "email": "wj42ftns@gmail.com",
+    "url": "https://github.com/wj42ftns"
+  },
+  "license": "MIT",
+  "description": "",
+  "main": "run.js",
+  "keywords": [],
+  "scripts": {
+    "t": "yarn test",
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "co": "^4.6.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "replace-in-file": "^3.4.2",
+    "shelljs": "^0.8.2",
+    "ssh-shell": "^1.0.0"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "clearMocks": true,
+    "verbose": false,
+    "automock": false,
+    "bail": false,
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "roots": [
+      "<rootDir>"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/.history/"
+    ]
+  }
+}
